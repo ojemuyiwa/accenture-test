@@ -93,7 +93,7 @@ async function getOutput(data) {
           break;
         case "processing":
           // execution should be delayed by 2 seconds, then fetch the next state
-          setTimeout(resolve.bind(null), 2000);
+          setTimeout(resolve, 2000);
           break;
 
         // assuming last state available is only error
